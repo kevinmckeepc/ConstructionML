@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UeF-Y2-bGp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Capture Controller-->
+        <scene sceneID="wNt-ZQ-tZC">
+            <objects>
+                <viewController id="UeF-Y2-bGp" customClass="CaptureController" customModule="ConstructionML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svg-KG-8zR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRb-sL-ZFH" customClass="CaptureView" customModule="ConstructionML" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IC8-YY-OFv">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="whR-L0-NJ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WRb-sL-ZFH" firstAttribute="trailing" secondItem="ycJ-8F-O4H" secondAttribute="trailing" id="0cA-c7-ZyU"/>
+                            <constraint firstItem="WRb-sL-ZFH" firstAttribute="bottom" secondItem="ycJ-8F-O4H" secondAttribute="bottom" id="2Wv-we-hRS"/>
+                            <constraint firstItem="IC8-YY-OFv" firstAttribute="leading" secondItem="ycJ-8F-O4H" secondAttribute="leading" id="AjY-FO-XVs"/>
+                            <constraint firstItem="WRb-sL-ZFH" firstAttribute="top" secondItem="ycJ-8F-O4H" secondAttribute="top" id="DuJ-Bd-p0K"/>
+                            <constraint firstItem="IC8-YY-OFv" firstAttribute="bottom" secondItem="ycJ-8F-O4H" secondAttribute="bottom" id="OEa-jb-T5L"/>
+                            <constraint firstItem="WRb-sL-ZFH" firstAttribute="leading" secondItem="ycJ-8F-O4H" secondAttribute="leading" id="Ryd-Fe-hXV"/>
+                            <constraint firstItem="IC8-YY-OFv" firstAttribute="trailing" secondItem="ycJ-8F-O4H" secondAttribute="trailing" id="iLT-BS-Jcz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ycJ-8F-O4H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3VS-KC-5aG"/>
+                    <connections>
+                        <outlet property="captureView" destination="WRb-sL-ZFH" id="i1u-qd-NUf"/>
+                        <outlet property="predictionLabel" destination="IC8-YY-OFv" id="gTM-Jh-Dxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3k-Ja-TuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+</document>

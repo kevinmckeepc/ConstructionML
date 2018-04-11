@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		12A8F9D4207E87F200EB6F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8F9D3207E87F200EB6F8F /* AppDelegate.swift */; };
-		12A8F9D6207E87F200EB6F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8F9D5207E87F200EB6F8F /* ViewController.swift */; };
+		12A8F9D6207E87F200EB6F8F /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8F9D5207E87F200EB6F8F /* CaptureController.swift */; };
 		12A8F9D9207E87F200EB6F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A8F9D7207E87F200EB6F8F /* Main.storyboard */; };
 		12A8F9DB207E87F300EB6F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A8F9DA207E87F300EB6F8F /* Assets.xcassets */; };
 		12A8F9DE207E87F300EB6F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A8F9DC207E87F300EB6F8F /* LaunchScreen.storyboard */; };
 		12A8F9E9207E87F300EB6F8F /* ConstructionMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8F9E8207E87F300EB6F8F /* ConstructionMLTests.swift */; };
 		12A8F9F4207E87F300EB6F8F /* ConstructionMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8F9F3207E87F300EB6F8F /* ConstructionMLUITests.swift */; };
+		12A8FA0B207E8AC000EB6F8F /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */; };
+		12A8FA0E207E8C6C00EB6F8F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA0D207E8C6C00EB6F8F /* UIImageExtensions.swift */; };
+		12A8FA11207E9F7600EB6F8F /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA10207E9F7600EB6F8F /* CaptureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		12A8F9D0207E87F200EB6F8F /* ConstructionML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstructionML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A8F9D3207E87F200EB6F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12A8F9D5207E87F200EB6F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12A8F9D5207E87F200EB6F8F /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
 		12A8F9D8207E87F200EB6F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12A8F9DA207E87F300EB6F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A8F9DD207E87F300EB6F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		12A8F9EF207E87F300EB6F8F /* ConstructionMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstructionMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A8F9F3207E87F300EB6F8F /* ConstructionMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructionMLUITests.swift; sourceTree = "<group>"; };
 		12A8F9F5207E87F300EB6F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		12A8FA0D207E8C6C00EB6F8F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		12A8FA10207E9F7600EB6F8F /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,10 @@
 		12A8F9D2207E87F200EB6F8F /* ConstructionML */ = {
 			isa = PBXGroup;
 			children = (
-				12A8F9D3207E87F200EB6F8F /* AppDelegate.swift */,
-				12A8F9D5207E87F200EB6F8F /* ViewController.swift */,
-				12A8F9D7207E87F200EB6F8F /* Main.storyboard */,
-				12A8F9DA207E87F300EB6F8F /* Assets.xcassets */,
-				12A8F9DC207E87F300EB6F8F /* LaunchScreen.storyboard */,
-				12A8F9DF207E87F300EB6F8F /* Info.plist */,
+				12A8FA01207E880400EB6F8F /* Classes */,
+				12A8FA05207E8A6100EB6F8F /* MLModels */,
+				12A8FA02207E880D00EB6F8F /* Storyboards */,
+				12A8FA03207E881700EB6F8F /* Resources */,
 			);
 			path = ConstructionML;
 			sourceTree = "<group>";
@@ -123,6 +127,67 @@
 				12A8F9F5207E87F300EB6F8F /* Info.plist */,
 			);
 			path = ConstructionMLUITests;
+			sourceTree = "<group>";
+		};
+		12A8FA01207E880400EB6F8F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12A8F9D3207E87F200EB6F8F /* AppDelegate.swift */,
+				12A8FA0F207E9F2900EB6F8F /* Views */,
+				12A8FA04207E896900EB6F8F /* Controllers */,
+				12A8FA0C207E8C5700EB6F8F /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		12A8FA02207E880D00EB6F8F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				12A8F9D7207E87F200EB6F8F /* Main.storyboard */,
+				12A8F9DC207E87F300EB6F8F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		12A8FA03207E881700EB6F8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12A8F9DA207E87F300EB6F8F /* Assets.xcassets */,
+				12A8F9DF207E87F300EB6F8F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		12A8FA04207E896900EB6F8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12A8F9D5207E87F200EB6F8F /* CaptureController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		12A8FA05207E8A6100EB6F8F /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		12A8FA0C207E8C5700EB6F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12A8FA0D207E8C6C00EB6F8F /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12A8FA0F207E9F2900EB6F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12A8FA10207E9F7600EB6F8F /* CaptureView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A8F9D6207E87F200EB6F8F /* ViewController.swift in Sources */,
+				12A8F9D6207E87F200EB6F8F /* CaptureController.swift in Sources */,
+				12A8FA0B207E8AC000EB6F8F /* Inceptionv3.mlmodel in Sources */,
 				12A8F9D4207E87F200EB6F8F /* AppDelegate.swift in Sources */,
+				12A8FA0E207E8C6C00EB6F8F /* UIImageExtensions.swift in Sources */,
+				12A8FA11207E9F7600EB6F8F /* CaptureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +499,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5ZTW5JSK5;
-				INFOPLIST_FILE = ConstructionML/Info.plist;
+				DEVELOPMENT_TEAM = Q69JMRS3FN;
+				INFOPLIST_FILE = "$(SRCROOT)/ConstructionML/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,8 +518,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5ZTW5JSK5;
-				INFOPLIST_FILE = ConstructionML/Info.plist;
+				DEVELOPMENT_TEAM = Q69JMRS3FN;
+				INFOPLIST_FILE = "$(SRCROOT)/ConstructionML/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
