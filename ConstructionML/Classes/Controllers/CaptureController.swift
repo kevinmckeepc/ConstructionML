@@ -23,7 +23,8 @@ class CaptureController: UIViewController {
         }
     }
 
-    private let model = Inceptionv3()
+    //private let model = Inceptionv3()
+    private let model = Dogs()
     private let captureSession = AVCaptureSession()
 
     private lazy var numberFormatter: NumberFormatter = {
@@ -93,18 +94,18 @@ extension CaptureController: AVCaptureVideoDataOutputSampleBufferDelegate {
             return
         }
         let ciImage = CIImage(cvImageBuffer: imageBuffer)
-        guard let image = UIImage(ciImage: ciImage).resizeTo(CGSize(width: 299, height: 299)), let pixelBuffer = image.buffer() else {
+        guard let image = UIImage(ciImage: ciImage).resizeTo(CGSize(width: 224, height: 224)), let pixelBuffer = image.buffer() else {
             return
         }
-
-        guard let output = try? model.prediction(image: pixelBuffer) else {
+        
+        guard let output = try? model.prediction(data: pixelBuffer) else {
             return
         }
 
         DispatchQueue.main.async {
-            let probability = output.classLabelProbs[output.classLabel] ?? 0
+            let probability = output.outputScores[output.outputLabel] ?? 0
             let formatted = self.numberFormatter.string(for: probability) ?? ""
-            self.predictionLabel?.text = "\(output.classLabel): \(formatted)"
+            self.predictionLabel?.text = "\(output.outputLabel): \(formatted)"
         }
     }
 }

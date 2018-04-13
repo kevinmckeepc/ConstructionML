@@ -17,6 +17,7 @@
 		12A8FA0B207E8AC000EB6F8F /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */; };
 		12A8FA0E207E8C6C00EB6F8F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA0D207E8C6C00EB6F8F /* UIImageExtensions.swift */; };
 		12A8FA11207E9F7600EB6F8F /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8FA10207E9F7600EB6F8F /* CaptureView.swift */; };
+		12A9123420815EA100801BC6 /* Dogs.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 12A9123320815EA100801BC6 /* Dogs.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		12A8FA0D207E8C6C00EB6F8F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		12A8FA10207E9F7600EB6F8F /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		12A9123320815EA100801BC6 /* Dogs.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Dogs.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		12A8FA05207E8A6100EB6F8F /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
+				12A9123320815EA100801BC6 /* Dogs.mlmodel */,
 				12A8FA0A207E8AC000EB6F8F /* Inceptionv3.mlmodel */,
 			);
 			path = MLModels;
@@ -324,6 +327,7 @@
 				12A8F9D6207E87F200EB6F8F /* CaptureController.swift in Sources */,
 				12A8FA0B207E8AC000EB6F8F /* Inceptionv3.mlmodel in Sources */,
 				12A8F9D4207E87F200EB6F8F /* AppDelegate.swift in Sources */,
+				12A9123420815EA100801BC6 /* Dogs.mlmodel in Sources */,
 				12A8FA0E207E8C6C00EB6F8F /* UIImageExtensions.swift in Sources */,
 				12A8FA11207E9F7600EB6F8F /* CaptureView.swift in Sources */,
 			);
